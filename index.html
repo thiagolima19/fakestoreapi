@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake Store API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1>Fake Store API</h1>
+    </div>
+
+    <!-- this section will handle the sort and filter functions -->
+    <div id="sortItems">
+      <label for="sort">Sort by:</label>
+      <select id="sort">
+        <option value="asc">Price (Low to High)</option>
+        <option value="desc">Price (High to Low)</option>
+      </select>
+      <label for="category">Filter by Category:</label>
+      <select id="category">
+        <option value="">All</option>
+        <option value="men's clothing">Men's Clothing</option>
+        <option value="jewelery">Jewelery</option>
+        <option value="electronics">Electronics</option>
+        <option value="women's clothing">Women's Clothing</option>
+      </select>
+    </div>
+
+    <!-- on this section all the products will be appended after use the functions of sort and filter -->
+    <div id="product-details">
+      <h1></h1>
+    </div>
+
+    <!-- this section is the page's footer -->
+    <div class="container">
+      <div class="footer-text">
+        <p>
+          Copyrights © Thiago Lima. Made with love based on College Project.
+        </p>
+        <p id="datetime"></p>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
